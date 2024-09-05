@@ -25,8 +25,8 @@ sudo vim /etc/apache2/sites-available/default-ssl.conf
 ```
 <IfModule mod_ssl.c>
 <VirtualHost _default_:443>
-ServerAdmin tcrcsupport@tibet.net
-ServerName efiling-server-ip
+ServerAdmin suport@epotala.com
+ServerName app-server-ip
 DocumentRoot /var/www/html
 
 ErrorLog ${APACHE_LOG_DIR}/error.log

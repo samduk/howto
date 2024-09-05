@@ -49,11 +49,17 @@ network:
   version: 2
   ethernets:
     eno1:
-      dhcp4: false
-      addresses: [192.168.56.187/24]
-      gateway4: 192.168.56.1
+      dhcp4: no
+      addresses:
+        - 192.168.56.187/24
+      routes:
+        - to: default
+          via: 192.168.56.1
       nameservers:
-          addresses: [8.8.8.8,8.8.4.4]
+        addresses:
+          - 8.8.8.8      # Google's DNS server
+          - 8.8.4.4      # Alternate Google's DNS server
+
 ```
 Note: All the spacing (identation should be placed with help of **spacebar** not the **tab key**). Spacing should be either two spaces or 4 spaces. 
 

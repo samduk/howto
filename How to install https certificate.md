@@ -67,10 +67,10 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
 Redirect "/" "https://application-server-ip/
 </VirtualHost>
 ```
-
 ```
 sudo a2enmod ssl
 sudo a2enmod headers
+sudo a2enmod rewrite 
 ```
 
 ```
